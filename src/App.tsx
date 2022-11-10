@@ -5,7 +5,7 @@ import "./Assets/main.css"
 function App() {
   return (
     <>
-  <h1>ishlayabdi</h1>
+      <H1>BUGS</H1>
     </>
   );
 }
