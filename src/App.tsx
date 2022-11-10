@@ -5,7 +5,7 @@ import "./Assets/main.css"
 function App() {
   return (
     <>
-      <H1>BUGS</H1>
+      <h1>BUGS</h1>
     </>
   );
 }
