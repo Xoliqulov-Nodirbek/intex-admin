@@ -3,9 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {
+      margin:{
+        navBarIcon:'14px',
+      },
       width:{
         logoWidth:'180px',
         loginLogoWidth:'240px',
+        sitebarWidth:'253px',
       },
       height:{
         logoHeight:'17px',
@@ -27,6 +31,11 @@ module.exports = {
         forgotPasswordColor:'#4F46E5',
         inputPleacholderColor:'#B4B6B8',
         ruUzUsColors:"#2B3D91",
+        navBarColor:"#464A4D",
+        navSubColor:'#B9B9B9',
+      },
+      lineHeight:{
+        lead:'150%',
       },
     },
   },

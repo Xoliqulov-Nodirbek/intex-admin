@@ -1,11 +1,14 @@
 import React from 'react';
 import "./Assets/main.css"
+import SiteBar from './components/Sitebar/SiteBar';
 
 
 function App() {
   return (
     <>
-      <h1>BUGS</h1>
+      <div>
+        <SiteBar/>
+      </div>
     </>
   );
 }
