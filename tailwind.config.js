@@ -6,10 +6,17 @@ module.exports = {
       margin:{
         navBarIcon:'14px',
       },
+      padding:{
+        headerInpPl:'38px',
+        headerPaddingTopBottom:'19px',
+        headerPaddingX:'30px',
+      },
       width:{
         logoWidth:'180px',
         loginLogoWidth:'240px',
         sitebarWidth:'253px',
+        supportWidth:'150px',
+        headerInputWidth:'260px',
       },
       height:{
         logoHeight:'17px',
@@ -26,6 +33,7 @@ module.exports = {
         defaultBtnBg:"#F2F2F2",
         recomendBtnBg:"#22B0F8;",
         addProductSizeBtnBg:"#9CDAFF",
+        headerInpBg:"#FBFBFC",
       },
       colors:{
         forgotPasswordColor:'#4F46E5',
@@ -33,6 +41,7 @@ module.exports = {
         ruUzUsColors:"#2B3D91",
         navBarColor:"#464A4D",
         navSubColor:'#B9B9B9',
+        supportColor:'#109EF4',
       },
       lineHeight:{
         lead:'150%',
