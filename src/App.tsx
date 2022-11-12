@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import './Assets/main.css'
 import FormInput from './BaseComponents/FormInput/FormInput'
@@ -65,6 +66,20 @@ function App() {
           Click
         </MButton>
       </form>
+
+
+import React from 'react';
+import "./Assets/main.css"
+import SiteBar from './components/Sitebar/SiteBar';
+
+function App() {
+
+  return (
+    <>
+      <div>
+        <SiteBar/>
+      </div>
+
     </>
   )
 }
