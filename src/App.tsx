@@ -1,4 +1,3 @@
-import React from 'react';
 import {Routes, Route} from "react-router-dom"
 import SiteBar from './components/Sitebar/SiteBar';
 import Header from "./components/Header/Header"

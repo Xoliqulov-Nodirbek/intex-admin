@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import HomeImg from "../../Assets/Images/HeaderImgs/HomeImg.svg"
 import Mbutton from "../../BaseComponents/MButton/MButton"
-import Trash from "../../Assets/Images/HomeContentImg/trash.svg"
 
 export default function Home() {
   return (
