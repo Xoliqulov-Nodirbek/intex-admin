@@ -10,6 +10,7 @@ module.exports = {
         headerInpPl:'38px',
         headerPaddingTopBottom:'19px',
         headerPaddingX:'30px',
+        homeContentPadding:'30px',
       },
       width:{
         logoWidth:'180px',
@@ -17,6 +18,8 @@ module.exports = {
         sitebarWidth:'253px',
         supportWidth:'150px',
         headerInputWidth:'260px',
+        homeInpWidth:'284px',
+        homeSortWidth:'170px',
       },
       height:{
         logoHeight:'17px',
@@ -34,6 +37,7 @@ module.exports = {
         recomendBtnBg:"#22B0F8;",
         addProductSizeBtnBg:"#9CDAFF",
         headerInpBg:"#FBFBFC",
+        filterBg:'#109ef4',
       },
       colors:{
         forgotPasswordColor:'#4F46E5',
@@ -42,10 +46,18 @@ module.exports = {
         navBarColor:"#464A4D",
         navSubColor:'#B9B9B9',
         supportColor:'#109EF4',
+        homeColor:'#333',
+        homeSortWrap:'#666',
       },
       lineHeight:{
         lead:'150%',
       },
+      borderRadius:{
+        headerNotif:'50%',
+      },
+      translate:{
+        bottom:"60px",
+      }
     },
   },
   plugins: [],
