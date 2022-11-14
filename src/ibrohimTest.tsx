@@ -23,7 +23,7 @@ const validationSchema = Yup.object({
     .max(20, 'Maximum 20 characters'),
 })
 
-function App() {
+function IbrohimTest() {
   const formik = useFormik({
     initialValues,
     onSubmit,
@@ -69,3 +69,6 @@ function App() {
     </>
   )
 }
+
+
+export default IbrohimTest
