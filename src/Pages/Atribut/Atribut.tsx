@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import HomeImg from "../../Assets/Images/HeaderImgs/HomeImg.svg"
 
-export default function Home() {
+export default function Home({}) {
   return (
     <>
       <div className="bg-white flex items-center w-full pt-1.5 pb-1.5 px-8">
