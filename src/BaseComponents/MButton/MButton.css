@@ -57,15 +57,29 @@
   border-color: #182d8b;
 }
 
-.filter {
+.filter{
+  padding: 10px 12px;
+  position: relative;
   min-width: 105px;
-  min-height: 44px;
   border-radius: 8px;
   color: #fff;
   background-color: #109ef4;
   border-color: #4d96ff;
-  gap: 10px;
   font-size: 14px;
+  text-align: right;
+}
+.filter::before{
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url("../../Assets/Images/HomeContentImg/filterBg.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 15px;
 }
 
 .filter:hover {
@@ -74,17 +88,31 @@
   border-color: #087bc3;
 }
 
+
 .add {
+  position: relative;
+  padding: 12px 20px;
   min-width: 127px;
-  min-height: 44px;
   border-radius: 6px;
   color: #fff;
   background-color: #109ef4;
   border-color: #4d96ff;
-  gap: 8px;
   font-size: 14px;
+  text-align: right;
 }
-
+.add::before{
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-image: url("../../Assets/Images/HomeContentImg/add.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 20px;
+}
 .add:hover {
   color: #fff;
   background-color: #058fe4;

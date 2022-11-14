@@ -13,7 +13,6 @@ export default function SiteBar() {
     setInnnerActice(true)
     setCategoryActive(false)
     setAtributActive(false)
-
   }
   function handCategory() {
     setCategoryActive(true)
@@ -25,12 +24,14 @@ export default function SiteBar() {
     setAtributActive(true)
     setCategoryActive(false)
     setInnnerActice(false)
+
   }
 
   function delteInnerlink() {
     setAtributActive(false)
     setCategoryActive(false)
     setInnnerActice(false)
+    setNavBarDrop(false)
   }
   function openDropDown() {
     setNavBarDrop(!navBarDrop)
@@ -39,7 +40,7 @@ export default function SiteBar() {
 
   return (
     <div className='bg-white w-sitebarWidth h-screen relative'>
-      <div className='pb-8  px-5'>
+      <div className='pb-9  px-5'>
         <div className='py-8 border-b-2'>
           <Link to={'/'}>
             <img src={Logo} alt="Site Logo" width={180} height={17} />
@@ -50,20 +51,21 @@ export default function SiteBar() {
         <NavLink onClick={() => {
           delteInnerlink()
           openDropDown()
+          setInnnerActice(true)
         }} className={`py-4 opacity-80 flex relative items-center px-6 text-sm leading-lead font-medium text-navBarColor`} to={'/'}>
           <ProductIcon />
           <span className='ml-navBarIcon'>Продукты</span>
           <img className={`absolute right-6 duration-200 -rotate-90 ${navBarDrop ? "rotate-0" : ""}`} src={DropIcon} alt="Drop IMg" width={10} height={9} />
         </NavLink>
-        <ul className={`h-0 overflow-hidden opacity-0 duration-500 ${navBarDrop ? "h-auto overflow-auto opacity-100" : ""}`}>
+        <ul className={` duration-500 ${navBarDrop ? "h-auto overflow-auto opacity-100" : "h-0 overflow-hidden opacity-0"}`}>
           <li>
-            <NavLink onClick={handActive} className={`${innnerActice ? "anterActive" : ""} py-2.5 opacity-80 pl-14 block font-normal text-navBarColor text-sm`} to={'listProduct'}>Список продуктов</NavLink>
+            <Link onClick={handActive} className={`${innnerActice ? "anterActive" : ""} py-2.5 opacity-80 pl-14 block font-normal text-navBarColor text-sm`} to={'/'}>Список продуктов</Link>
           </li>
           <li>
-            <NavLink onClick={handCategory} className={`${categoryActive ? "anterActive" : ""} py-2.5 opacity-80 pl-14 block font-normal text-navBarColor text-sm`} to={'category'}>Категории</NavLink>
+            <Link onClick={handCategory} className={`${categoryActive ? "anterActive" : ""} py-2.5 opacity-80 pl-14 block font-normal text-navBarColor text-sm`} to={'/category'}>Категории</Link>
           </li>
           <li>
-            <NavLink onClick={handAtribut} className={`${atributActive ? "anterActive" : ""} py-2.5 opacity-80 pl-14 block font-normal text-navBarColor text-sm  `} to={'atribut'}>Атрибуты</NavLink>
+            <Link onClick={handAtribut} className={`${atributActive ? "anterActive" : ""} py-2.5 opacity-80 pl-14 block font-normal text-navBarColor text-sm  `} to={'/atribut'}>Атрибуты</Link>
           </li>
         </ul>
         <NavLink onClick={delteInnerlink} className="py-4 opacity-80 flex items-center px-6 text-sm leading-lead font-medium text-navBarColor" to={'/order'}>
@@ -87,5 +89,5 @@ export default function SiteBar() {
         <p>Developed by <span className='text-supportColor'>Support IT Solution </span></p> 
       </div>
     </div>
-  )
+  )            
 }
