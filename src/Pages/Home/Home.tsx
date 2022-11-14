@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom"
 import HomeImg from "../../Assets/Images/HeaderImgs/HomeImg.svg"
 import Mbutton from "../../BaseComponents/MButton/MButton"
+import "../../BaseComponents/MButton/MButton.css"
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
                   <path d="M9 11L12 14L15 11" stroke="#04009A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <Mbutton BType='add bg-filterBg' type='button'>Добавить</Mbutton>
+              <Link to={'/addProduct'} className='add bg-filterBg'>Добавить</Link>
             </div>
           </div>
         </div>
