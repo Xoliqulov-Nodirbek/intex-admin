@@ -20,10 +20,12 @@ module.exports = {
         headerInputWidth:'260px',
         homeInpWidth:'284px',
         homeSortWidth:'170px',
+        addProductListWidth:'65%',
       },
       height:{
         logoHeight:'17px',
         logoLoginHeight:'22px',
+        addProductHeight:'3px',
       },
       backgroundColor:{
         loginBtn:"#2B3D90",
@@ -40,6 +42,8 @@ module.exports = {
         filterBg:'#109ef4',
       },
       colors:{
+        addProductColor:"#24283A",
+        addProductLinks:"#D8D8D8",
         forgotPasswordColor:'#4F46E5',
         inputPleacholderColor:'#B4B6B8',
         ruUzUsColors:"#2B3D91",
